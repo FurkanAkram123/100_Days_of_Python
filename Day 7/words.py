@@ -1,0 +1,13 @@
+word_list = ["monkey", "elephant", "giraffe", 
+             "tiger", "lion", "zebra", "bear", 
+             "panda", "koala", "kangaroo", 
+             "hippopotamus", "rhinoceros", "crocodile", 
+             "alligator", "snake", "lizard", 
+             "frog", "toad", "turtle", 
+             "tortoise", "fish", "shark", 
+             "dolphin", "whale", "octopus", 
+             "squid", "crab", "lobster", 
+             "shrimp", "jellyfish", "starfish", 
+             "coral", "seaweed", "algae", "plankton", 
+             "bacteria", "virus", "fungus", "mushroom", 
+             "yeast", "plant", "tree", "flower", "grass"]
