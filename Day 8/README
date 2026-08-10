@@ -1,0 +1,30 @@
+# Project Title: Cesar Cypher
+
+This code is used to decypher or encode a message for someone as was done in the time of Cesar the emporer.
+
+## Description
+
+In ancient rome, Cesar would send his generals encrypted messages where the you would need to know something called a "shift number". This means that every character in the message was shifted by a certain number which would only be known by allies or high level executives.
+
+This code aims to mimic the cesar decoding and encoding method to encode a message using a shift number that will be known by the user alone.
+
+
+### Dependencies
+
+optional: art.py - this script has the logo for the game. Not mandatory but adds a little bit of flavour to the mix.
+
+### Installations Needed
+
+NA
+
+## Authors
+
+Furkan Akram
+
+## Version History
+
+
+## Acknowledgments
+
+Dr. Angela Yu - Udemy
+
