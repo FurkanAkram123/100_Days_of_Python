@@ -10,7 +10,7 @@ optional: ASCII_Art.py - this script has the logo for the auction. Not mandatory
 
 ### Installations Needed
 
-NA
+Optional - os library: This library is used to clear the terminal once the bidder has added their name and bid amount. This library is therefore, optional.
 
 ## Authors
 
