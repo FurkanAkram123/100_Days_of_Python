@@ -1,0 +1,24 @@
+# Project Title: sILENT AUCTION
+
+## Description
+
+This code is used to start a silent auction program which will help a group of users to place their bids for an item on sale without knowing how much someone else had placed.
+
+### Dependencies
+
+optional: ASCII_Art.py - this script has the logo for the auction. Not mandatory but adds a little bit of flavour to the mix.
+
+### Installations Needed
+
+NA
+
+## Authors
+
+Furkan Akram
+
+## Version History
+
+
+## Acknowledgments
+
+Dr. Angela Yu - Udemy
