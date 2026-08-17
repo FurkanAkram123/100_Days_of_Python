@@ -27,7 +27,7 @@ num1 = float(input("What's the first number?: "))
 
 while True:
     
-    operation_required = input(str(f"Pick an operation: {all_operations.keys()}"))
+    operation_required = input(str(f"Pick an operation {all_operations.keys()}: "))
 
     #check if the operation is valid
     if operation_required not in all_operations:
@@ -37,9 +37,9 @@ while True:
     num2 = float(input("What's the second number?: "))
 
     #print the entire calculation
-    print (num1, operation_required, num2, "=", all_operations[operation_required](num1, num2))
+    print (f"{num1} {operation_required} {num2} = {all_operations[operation_required](num1, num2)}", "\n")
     num1 = all_operations[operation_required](num1, num2)
-
+    
     #check if the user wants to continue
     if (input("Do you want to continue (y/n)") == "n"):
         print ("Thank you for using the calculator!")
