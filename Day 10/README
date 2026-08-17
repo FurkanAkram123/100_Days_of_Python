@@ -1,0 +1,25 @@
+# Project Title: Calculator
+
+## Description
+
+This code is used to help the user calculate a set of numbers using the DMAS (Divide, Multiply, Add, Subtract) Operationsa and display the final result.
+
+### Dependencies
+
+Optional: ASCII_Art.py - this script has the logo for the Calculator. Not mandatory, but adds a little bit of flavour to the mix.
+
+### Installations Needed
+
+NA
+
+## Authors
+
+Furkan Akram
+
+## Version History
+
+
+## Acknowledgments
+
+Dr. Angela Yu - Udemy
+Jeremy J. Olson - ASCII Artist

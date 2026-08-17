@@ -1,21 +1,26 @@
-capitals = {"France": "Paris", "Germany": "Berlin", "Italy": "Rome", "Spain": "Madrid" }
+from sympy import false
 
-# travel_log = {
-#     "France": ["Paris", "Lyon", "Marseille"], 
-#     "Germany": ["Berlin", "Munich", "Frankfurt"],
-#               }
-travel_log = {
-    "France": {
-        "Cities_Visited": ["Paris", "Lyon", "Marseille"],
-        "Num_times_Visited" :5,} ,
-        
-    "Germany": {
-        "Cities_Visited": ["Berlin", "Munich", "Frankfurt"],
-        "Num_times_Visited" :3,
-    },
-              }
 
-#nested_list = ["a", "b", ["c", "D"]]
-               
-print (travel_log["Germany"]["Cities_Visited"][2])
-print (travel_log['France']["Num_times_Visited"])
+def is_leap_year(year):
+    #Write your code here. 
+    #Don't change the function name.
+    print (year % 4)
+    print(year/100)
+    print (year%100)
+    print ((year/100)%2)
+    print (year%400)
+    
+    if year % 4 == 0:
+        if year%100 == 0:
+            if year%400 == 0:
+                return True
+            else: return false
+            
+        else: return True
+    else:
+        return False
+            
+if is_leap_year(2020):
+    print ("Leap year.")
+else:
+    print ("Not leap year.")
