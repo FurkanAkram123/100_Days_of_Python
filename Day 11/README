@@ -1,0 +1,28 @@
+# Project Title: Black Jack
+
+## Description
+
+This code is used to help the user play a game of black jack against the user. A few assumptions being made in this game are:
+
+1. Each card has a equal probability of being pulled
+2. We are pulling from an infinite deck of cards - Can't run out of any card
+
+### Dependencies
+
+Optional: ASCII_Art.py - this script has the logo for the Calculator. Not mandatory, but adds a little bit of flavour to the mix.
+
+### Installations Needed
+
+NA
+
+## Authors
+
+Furkan Akram
+
+## Version History
+
+
+## Acknowledgments
+
+Dr. Angela Yu - Udemy
+ejm98 - ASCII Artist
