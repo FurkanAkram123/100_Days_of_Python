@@ -32,7 +32,7 @@ def start_game(difficulty, num):
         return f"The number was {num}, You lose."
     
 while game_active:
-    num = random.randrange(1,100)
+    num = random.randint(1,100)
     print ("I'm thinking of a number between 1 and 100.")
 
     #set the difficulty
