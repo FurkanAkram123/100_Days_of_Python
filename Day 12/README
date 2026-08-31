@@ -1,0 +1,27 @@
+# Project Title: Prime Number + Guessing Game
+
+## Description
+
+There are two scripts in this folder. 
+1. prime_num_excercise.py --> This code will tell you if the number entered is a prime number or not.
+2. Number_guessing_game.py --> This code is used to play a number guessing game where the user gets to guess the number picked by the computer. 
+
+
+### Dependencies
+
+Optional: ASCII_Art.py - this script has the logo for the Calculator. Not mandatory, but adds a little bit of flavour to the mix.
+
+### Installations Needed
+
+NA
+
+## Authors
+
+Furkan Akram
+
+## Version History
+
+
+## Acknowledgments
+
+Dr. Angela Yu - Udemy
