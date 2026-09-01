@@ -1,0 +1,29 @@
+# Project Title: Higher/Lower Followeing Game
+
+## Description
+
+This folder has a main script that is used so that the user can play a follower count guessing game where the user gets to guess weather or not one person/channel has more followers than the other. 
+
+
+### Dependencies
+
+Optional: ASCII_Art.py - this script has the logo for the Calculator. Not mandatory, but adds a little bit of flavour to the mix.
+
+Mandatory: 
+
+Follower_data.py --> Has all the info of people and channels. Feel free to add more to the dictionary
+
+### Installations Needed
+
+NA
+
+## Authors
+
+Furkan Akram
+
+## Version History
+V1
+
+## Acknowledgments
+
+Dr. Angela Yu - Udemy

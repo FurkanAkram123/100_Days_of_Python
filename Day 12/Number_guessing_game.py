@@ -41,7 +41,6 @@ while game_active:
 
     if (input("Would you like to play again? Type 'yes' or 'no': ")).lower() == 'no':
         game_active = False
-        print (game_active)
 
 # Clear the screen 
     subprocess.run("cls" if os.name == "nt" else "clear", shell=True) 
