@@ -75,6 +75,4 @@ if __name__ == "__main__":
         # Clear the screen once the game is done
         subprocess.run("cls" if os.name == "nt" else "clear", shell=True) 
         print ("Thank you for playing!")
-    else:
-        
-        print ("Goodbye!")
+    else: print ("Goodbye!")
