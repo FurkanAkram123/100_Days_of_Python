@@ -2,7 +2,7 @@
 
 ## Description
 
-This folder has a main script that is used so that the user can play a follower count guessing game where the user gets to guess weather or not one person/channel has more followers than the other. 
+This folder has a main script that is used so for a coffee machine. The purpose of the coffee machine is to request a choice from the user based off of its selections, process coins by the user as well as change accurately.
 
 
 ### Dependencies
