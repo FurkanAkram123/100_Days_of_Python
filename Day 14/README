@@ -7,7 +7,7 @@ This folder has a main script that is used so that the user can play a follower 
 
 ### Dependencies
 
-Optional: ASCII_Art.py - this script has the logo for the Calculator. Not mandatory, but adds a little bit of flavour to the mix.
+Optional: ASCII_Art.py - this script has the logo for the Follower count game. Not mandatory, but adds a little bit of flavour to the mix.
 
 Mandatory: 
 
