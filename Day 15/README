@@ -1,0 +1,32 @@
+# Project Title: THE COFFEE MACHINE
+
+## Description
+
+This folder has a main script that is used so that the user can play a follower count guessing game where the user gets to guess weather or not one person/channel has more followers than the other. 
+
+
+### Dependencies
+
+Optional: ASCII_Art.py - this script has the logo for the Calculator. Not mandatory, but adds a little bit of flavour to the mix.
+
+Mandatory: 
+
+KEY POINTS:
+1. The coffee machine has 3 hot flavours
+2. The machine is coin operated and must be able to process coins.
+3. Machine must be able to print a report and check if resources are sufficient
+
+### Installations Needed
+
+NA
+
+## Authors
+
+Furkan Akram
+
+## Version History
+V2
+
+## Acknowledgments
+
+Dr. Angela Yu - Udemy
