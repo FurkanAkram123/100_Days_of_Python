@@ -1,23 +1,11 @@
 import os, subprocess
 import math
-import tkinter as tk
-from tkinter import ttk
-from tkinter.messagebox import askyesno
+import popup
 import Menu
-
-
-#total amount of coins available
-coins_available = 0
-coins_quarter = 0
-coins_dime = 0
-coins_nickel = 0
-coins_penny = 0
-
+import ASCII_Art
 
 # Process the coins inserted by the user and return the total amount of money
 def process_coins (user_pick):
-
-    global coins_available, coins_quarter, coins_dime, coins_nickel, coins_penny
 
     #ask the user to insert coins
     print("Please insert coins. You can insert quarters, dimes, nickels, and pennies.")
@@ -65,52 +53,50 @@ def process_coins (user_pick):
     return total_inserted, change
 
 def process_change(change):
+    quarters_to_return, dimes_to_return, nickels_to_return, pennies_to_return = 0, 0, 0, 0
+    change_to_return = change
 
     #loop through the coins available in the machine and return the change to the user
     while True:
-        if change > 0:
+        while change_to_return > 0:
             #Return quarters first, then dimes then nickels then pennies
             if Menu.resources['quarters'] > 0:
-                quarters_to_return = math.floor(change / 0.25)
+                quarters_to_return = math.floor(change_to_return / 0.25)
                 if quarters_to_return > Menu.resources['quarters']:
                     quarters_to_return = Menu.resources['quarters']
-                change -= quarters_to_return * 0.25
+                change_to_return -= quarters_to_return * 0.25
                 Menu.resources['quarters'] -= quarters_to_return
             elif Menu.resources['dimes'] > 0:
-                dimes_to_return = math.floor(change / 0.10)
+                dimes_to_return = math.floor(change_to_return / 0.10)
                 if dimes_to_return > Menu.resources['dimes']:
                     dimes_to_return = Menu.resources['dimes']
-                change -= dimes_to_return * 0.10
+                change_to_return -= dimes_to_return * 0.10
                 Menu.resources['dimes'] -= dimes_to_return
             elif Menu.resources['nickels'] > 0:
-                nickels_to_return = math.floor(change / 0.05)
+                nickels_to_return = math.floor(change_to_return / 0.05)
                 if nickels_to_return > Menu.resources['nickels']:
                     nickels_to_return = Menu.resources['nickels']
-                change -= nickels_to_return * 0.05
+                change_to_return -= nickels_to_return * 0.05
                 Menu.resources['nickels'] -= nickels_to_return
             elif Menu.resources['pennies'] > 0:
-                pennies_to_return = math.floor(change / 0.01)
+                pennies_to_return = math.floor(change_to_return / 0.01)
                 if pennies_to_return > Menu.resources['pennies']:
                     pennies_to_return = Menu.resources['pennies']
-                change -= pennies_to_return * 0.01
+                change_to_return -= pennies_to_return * 0.01
                 Menu.resources['pennies'] -= pennies_to_return
+            else:
+                print("Sorry, the machine does not have enough change to return.") 
+                Menu.resources['quarters'] += quarters_to_return
+                Menu.resources['dimes'] += dimes_to_return
+                Menu.resources['nickels'] += nickels_to_return
+                Menu.resources['pennies'] += pennies_to_return
+                return False
+                  
+        print(f"Here is ${change:.2f} in change. You got {quarters_to_return} quarters, {dimes_to_return} dimes, {nickels_to_return} nickels, & {pennies_to_return} pennies.")
+        break
 
-            print(f"Here is ${change:.2f} in change. You got {quarters_to_return} quarters, {dimes_to_return} dimes, {nickels_to_return} nickels, & {pennies_to_return} pennies.")
-        else:
-            print("No change to return.")
-
-def confirm_drink(user_pick):
-    #confirmation window popup
-    root = tk.Tk()
-    root.title("Confirmation popup")
-    root.geometry("300x100")
-    answer = askyesno(title="Confirmation", message=f"Are you sure you want to order a {user_pick}?")
-    button = ttk.Button(root, text="Click to Confirm", command=confirm_drink)
-    button.pack(expand=True)
-    if answer:
-        return True
-    else:
-        return False
+    Menu.resources['money'] -= change
+    return True
 
 # return the total amount of resources available in the machine
 def make_report():
@@ -148,28 +134,28 @@ def main():
         #ask the user what they would like to order
         user_pick = input("Welcome to the Coffee Machine! What would you like? (espresso/latte/cappuccino): ").lower()
 
-        #confirm the choice with the user before continuing
-        #if confirm_drink(user_pick):
-
         #check if the user wants a report of the machine's resources
         if user_pick == "report":
             make_report()
 
         #check if the user wants to turn off the machine
-        elif user_pick == "off":
+        elif user_pick == "off": 
             machine_on = False
-
-        #check if the user wants to order a drink from the menu
+        #confirm the choice with the user before continuing
         elif user_pick in Menu.MENU:
-            #check if the machine has enough resoources to make the drink
-            if check_resources(user_pick):
-                total_inserted, change = process_coins(user_pick)
-                if total_inserted >= Menu.MENU[user_pick]['cost']:
-                    process_change (change)
-                    make_drink(user_pick)
+            if popup.confirm_pick(user_pick):
 
+                #check if the machine has enough resoources to make the drink
+                if check_resources(user_pick):
+                    total_inserted, change = process_coins(user_pick)
+                    if total_inserted >= Menu.MENU[user_pick]['cost']:
+                        if process_change(change):
+                            make_drink(user_pick)
+
+    os.system("cls" if os.name == "nt" else "clear")
     print("Thank you for using the Coffee Machine! Goodbye!")
        
 if __name__ == "__main__":
+    print (ASCII_Art.logo)
     main()
     

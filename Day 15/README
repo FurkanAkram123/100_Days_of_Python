@@ -13,7 +13,7 @@ Mandatory:
 
 KEY POINTS:
 1. The coffee machine has 3 hot flavours
-2. The machine is coin operated and must be able to process coins.
+2. The machine is coin operated and must be able to process coins and change appropriately.
 3. Machine must be able to print a report and check if resources are sufficient
 
 ### Installations Needed
@@ -30,3 +30,4 @@ V2
 ## Acknowledgments
 
 Dr. Angela Yu - Udemy
+Joan G. Stark - Artist
