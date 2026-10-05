@@ -1,0 +1,33 @@
+# Project Title: THE COFFEE MACHINE
+
+## Description
+
+This folder has a main script that is used so for a coffee machine. The purpose of the coffee machine is to request a choice from the user based off of its selections, process coins by the user as well as change accurately.
+
+
+### Dependencies
+
+Optional: ASCII_Art.py - this script has the logo for the Coffee Machine. Not mandatory, but adds a little bit of flavour to the mix.
+
+Mandatory: 
+
+KEY POINTS:
+1. The coffee machine has 3 hot flavours
+2. The machine is coin operated and must be able to process coins and change appropriately.
+3. Machine must be able to print a report and check if resources are sufficient
+
+### Installations Needed
+
+NA
+
+## Authors
+
+Furkan Akram
+
+## Version History
+V2
+
+## Acknowledgments
+
+Dr. Angela Yu - Udemy
+Joan G. Stark - Artist
