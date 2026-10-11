@@ -1,0 +1,34 @@
+# Project Title: Yes/No Quiz 
+
+## Description
+
+This folder has a main script that is used to create a program which illustrates how to create and use a class. 
+
+This folder also contains a secondary folder called "quiz-game-start" which has a program for a yes/no quiz game. The quiz is a 12 
+question quiz and runs until all questions are asked and spits out the final score once done.
+
+### Dependencies
+
+Mandatory: 
+
+KEY POINTS:
+1. The data.py file stores all the questions and their answers.
+2. The main.py calls all functions in the question_model and quiz_brain classes.
+3. The "quiz_brain" class does most of the heavy lifting.
+4. The questions are selected at random and every try.
+
+### Installations Needed
+
+random library
+
+## Authors
+
+Furkan Akram
+
+## Version History
+V2
+
+## Acknowledgments
+
+Dr. Angela Yu - Udemy
+ 
