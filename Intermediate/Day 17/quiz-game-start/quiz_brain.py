@@ -25,7 +25,7 @@ class QuizBrain:
         answer = self.question_list[self.selection_number].a.lower()
 
         #Ask the question and put the answer in lowercase
-        user_answer = input(f"Q#{self.question_number}: {current_question}").lower()
+        user_answer = input(f"Q#{self.question_number}: {current_question}?").lower()
         
         #remove all spaces for the answer
         user_answer = user_answer.replace(" ", "")
