@@ -2,12 +2,12 @@
 
 ## Description
 
-This folder has a main script that is used so for a coffee machine. The purpose of the coffee machine is to request a choice from the user based off of its selections, process coins by the user as well as change accurately.
-
+This folder has a main script that is used to create a program for a coffee machine using Object Oriented Programming. 
+This folder also contains a main function outside the oop folder which has the Pretty table library and an example of how to use it.
 
 ### Dependencies
 
-Optional: ASCII_Art.py - this script has the logo for the Coffee Machine. Not mandatory, but adds a little bit of flavour to the mix.
+Optional: ASCII_Art.py - this script has the logo for Pikachu, and a turtle. Not mandatory, but adds a little bit of flavour to the mix.
 
 Mandatory: 
 
@@ -30,4 +30,3 @@ V2
 ## Acknowledgments
 
 Dr. Angela Yu - Udemy
-Joan G. Stark - Artist
