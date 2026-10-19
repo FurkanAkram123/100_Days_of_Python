@@ -1,0 +1,32 @@
+# Project Title: Turtle Graphics
+
+## Description
+
+This folder has a main script that is used to create a program which illustrates how the turtle library works
+
+### Dependencies
+
+Mandatory: 
+
+KEY POINTS:
+1. The draw_shapes file draws a shape with as many sides as you want. I chose a triangle, square, octagon, pentagon, decagon etc.
+2. The random_walk.py creates a graphic which appears as if the turtle is taking a walk randomly across the canvas.
+3. The "circle.py" program makes a Spirograph using a heading change you describe and then stopspippip .
+4. The questions are selected at random and every try.
+
+### Installations Needed
+
+turtle library
+random library
+
+## Authors
+
+Furkan Akram
+
+## Version History
+V1
+
+## Acknowledgments
+
+Dr. Angela Yu - Udemy
+ 
