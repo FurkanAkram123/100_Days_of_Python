@@ -1,0 +1,30 @@
+# Project Title: Snake Game
+
+## Description
+
+This folder has a main script that is used to create a program which lets the user play th einfaous snake game. The goal is to continue eating small points on the screen until you either hit yourself or the border which causes the game to stop
+
+### Dependencies
+
+Mandatory: 
+
+KEY POINTS:
+1. 
+
+### Installations Needed
+
+turtle library
+random library
+tkinter library
+
+## Authors
+
+Furkan Akram
+
+## Version History
+V2
+
+## Acknowledgments
+
+Dr. Angela Yu - Udemy
+ 
