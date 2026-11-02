@@ -1,0 +1,34 @@
+# Project Title: Turtle Race
+
+## Description
+
+This folder has a main script that is used to create a program which lets the user bet on which turtle will win a race
+
+### Dependencies
+
+Mandatory: 
+
+KEY POINTS:
+1. Turtle creates 7 different turtles
+2. Start function puts all the turtles on the starting line
+3. ready_set_go function starts the race
+4. Bet is made AFTER the turtles have been made
+5. if the user picks a color outside the list of colors, the program will give a notification and close.
+
+### Installations Needed
+
+turtle library
+random library
+tkinter library
+
+## Authors
+
+Furkan Akram
+
+## Version History
+V2
+
+## Acknowledgments
+
+Dr. Angela Yu - Udemy
+ 
